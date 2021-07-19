@@ -1,6 +1,6 @@
-package dev.mflash.guides.logging.service;
+package dev.mflash.guides.spring.aop.logging.service;
 
-import dev.mflash.guides.logging.annotation.LogEntryExit;
+import dev.mflash.guides.spring.aop.logging.annotation.LogEntryExit;
 import org.springframework.stereotype.Service;
 
 import java.time.temporal.ChronoUnit;

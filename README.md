@@ -1,10 +1,12 @@
-# Spring guides
+# Spring Guides
+
+Source code of the examples published on [mflash.dev](https://mflash.dev).
 
 - [API Documentation with springdoc-openapi (WebMvc)](./springdoc-webmvc-integration)
 - [API Documentation with springdoc-openapi (WebMvc.fn)](./springdoc-webmvcfn-integration)
 - [Error handling for Spring Security Resource Server](./spring-security-resource-server-error-handling)
 - [Exception handling for a Spring-based REST API](./spring-rest-exception-handling)
-- [Logging methods with AspectJ in a Spring application](./method-entry-exit-logging)
+- [Logging methods with AspectJ in a Spring application](./aop-method-logging)
 - [Messaging with RabbitMQ and Spring Boot](./spring-messaging-rabbitmq)
 - [Persisting documents with MongoRepository](./spring-data-mongo-repository)
 - [Protecting endpoints with Spring Security Resource Server (Local token validation)](./spring-security-token-validation-local)

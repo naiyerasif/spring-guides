@@ -1,6 +1,6 @@
-package dev.mflash.guides.logging.aspect;
+package dev.mflash.guides.spring.aop.logging.aspect;
 
-import dev.mflash.guides.logging.annotation.LogEntryExit;
+import dev.mflash.guides.spring.aop.logging.annotation.LogEntryExit;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -23,7 +23,7 @@ import java.util.StringJoiner;
 @Component
 public class LogEntryExitAspect {
 
-  @Around("@annotation(dev.mflash.guides.logging.annotation.LogEntryExit)")
+  @Around("@annotation(dev.mflash.guides.spring.aop.logging.annotation.LogEntryExit)")
   public Object log(ProceedingJoinPoint point) throws Throwable {
     var codeSignature = (CodeSignature) point.getSignature();
     var methodSignature = (MethodSignature) point.getSignature();

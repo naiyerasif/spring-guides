@@ -1,16 +1,15 @@
-package dev.mflash.guides.logging.annotation;
-
-import static java.lang.annotation.ElementType.METHOD;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
+package dev.mflash.guides.spring.aop.logging.annotation;
 
 import org.springframework.boot.logging.LogLevel;
 
+import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.time.temporal.ChronoUnit;
 
-@Retention(RUNTIME)
-@Target(METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
 public @interface LogEntryExit {
 
   LogLevel value() default LogLevel.INFO;
